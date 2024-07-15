@@ -1,8 +1,10 @@
-setTimeout(() => {
-    let optionButton = document.querySelector('button[data-unique-id="Ribbon-InsertSlideSplit"]');  
-    if (optionButton) {
-        optionButton.click();
-    } else {
-        console.error('Option button not found');
+function addNewSlide() {
+    var newSlideButton = document.querySelector("[aria-label='New Slide']");
+    if (newSlideButton) {
+        newSlideButton.click();
+        return true;
     }
-}, 1000);
+    return false;
+}
+
+return addNewSlide();
