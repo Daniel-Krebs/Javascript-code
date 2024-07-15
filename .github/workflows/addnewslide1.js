@@ -14,14 +14,14 @@ if (designTab) {
 
     
     setTimeout(() => {
-        var designTheme = document.querySelector('[aria-label="Your Theme Name"]'); 
+        var designTheme = document.querySelector('[aria-label="Vanilla"]'); 
         if (designTheme) {
             simulateClick(designTheme);
             console.log("Selected the design theme.");
         } else {
             console.error("Design theme not found.");
         }
-    }, 1000); // Adjust timeout as necessary for UI update
+    }, 1000);
 } else {
     console.error("Design tab not found.");
 }
